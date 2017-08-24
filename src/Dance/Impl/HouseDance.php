@@ -12,6 +12,7 @@ namespace BakhaRuziev\Dance\Impl;
 class HouseDance extends DefaultDance
 {
 
+    protected $name = "HouseDance";
     protected $head_move = 'Почти нет движения';
     protected $body_move = 'Вперед-назад';
     protected $hand_move = 'Круговые движения';

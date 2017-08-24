@@ -35,12 +35,16 @@ class DefaultMusic implements Music
         return $this->dances;
     }
 
+    public function danceExist($dance_name)
+    {
+        foreach ($this->getDances() as $dance) {
+            if ($dance_name == $dance->getName()) {
+                return true;
+            }
+        }
 
-
-
-
-
-
+        return false;
+    }
 
 
 }

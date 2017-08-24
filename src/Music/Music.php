@@ -14,4 +14,6 @@ interface Music
     public function getName();
     public function getDances();
 
+    public function danceExist($dance_name);
+
 }

@@ -11,6 +11,7 @@ namespace BakhaRuziev\Dance\Impl;
 
 class CustomDance extends DefaultDance
 {
+    protected $name = '';
     protected $head_move = '';
     protected $body_move = '';
     protected $hand_move = '';
@@ -18,12 +19,13 @@ class CustomDance extends DefaultDance
 
     /**
      * CustomDance constructor.
+     * @param string $name
      * @param string $head_move
      * @param string $body_move
      * @param string $hand_move
      * @param string $foot_move
      */
-    public function __construct($head_move, $body_move, $hand_move, $foot_move)
+    public function __construct($name, $head_move, $body_move, $hand_move, $foot_move)
     {
         $this->head_move = $head_move;
         $this->body_move = $body_move;

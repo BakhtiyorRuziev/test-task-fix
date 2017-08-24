@@ -24,8 +24,16 @@ class CustomMusic extends DefaultMusic
     public function __construct(string $name, array $dances)
     {
         $this->name = $name;
-
+        foreach ($dances as $dance) {
+            if (!($dance instanceof Dance)) {
+                throw new \TypeError("Not assign Dance implement interface.");
+            }
+        }
         $this->dances = $dances;
     }
+
+
+
+
 
 }

@@ -11,6 +11,7 @@ namespace BakhaRuziev\Dance\Impl;
 
 class HipHopDance extends DefaultDance
 {
+    protected $name = "HipHopDance";
     protected $head_move = 'Полу-присяде';
     protected $body_move = 'Вперед-назад';
     protected $hand_move = 'Согнуты в локтях';

@@ -11,6 +11,7 @@ namespace BakhaRuziev\Dance\Impl;
 
 class RnBDance extends DefaultDance
 {
+    protected $name = "RnBDance";
     protected $head_move = 'Полу-присяде';
     protected $body_move = 'Вперед-назад';
     protected $hand_move = 'Согнуты в локтях';

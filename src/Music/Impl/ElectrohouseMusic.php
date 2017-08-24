@@ -16,9 +16,14 @@ use BakhaRuziev\Music\Music;
 class ElectrohouseMusic extends DefaultMusic
 {
     protected $name = "ElectrohouseMusic";
-    protected $dances = [
-        ElectroDanceDance::class,
-        HouseDance::class
-    ];
+    protected $dances = [];
+
+    public function __construct()
+    {
+        $this->dances = [
+            new ElectroDanceDance(),
+            new HouseDance()
+        ];
+    }
 
 }

@@ -15,9 +15,15 @@ use BakhaRuziev\Music\Music;
 class PopMusic extends DefaultMusic
 {
     protected $name = "PopMusic";
-    protected $dances = [
-        PopMusicDance::class,
-    ];
+    protected $dances = [];
+
+
+    public function __construct()
+    {
+        $this->dances = [
+            new PopMusicDance(),
+        ];
+    }
 
 
 

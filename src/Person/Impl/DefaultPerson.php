@@ -46,11 +46,7 @@ class DefaultPerson implements Person
         }
 
         foreach ($this->getDances() as $dance) {
-
-            if (in_array(get_class($dance), $this->listen_music->getDances(), true))
-            {
-                return true;
-            }
+            return $this->listen_music->danceExist($dance->getName());
         }
 
         return false;
@@ -66,7 +62,7 @@ class DefaultPerson implements Person
         $moves = [];
         foreach ($this->getDances() as $dance) {
 
-            if (in_array(get_class($dance), $this->listen_music->getDances(), true)) {
+            if ($this->listen_music->danceExist($dance->getName())) {
                 $moves[] = "Голова: " . $dance->getHeadMove();
                 $moves[] = "Руки: " . $dance->getHandMove();
                 $moves[] = "Тело: " . $dance->getBodyMove();

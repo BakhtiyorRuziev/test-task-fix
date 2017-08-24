@@ -11,6 +11,7 @@ namespace BakhaRuziev\Dance\Impl;
 
 class PopMusicDance extends DefaultDance
 {
+    protected $name = "PopMusicDance";
     protected $head_move = 'Плавные движения';
     protected $body_move = 'Плавные движения';
     protected $hand_move = 'Плавные движения';

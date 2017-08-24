@@ -12,6 +12,7 @@ namespace BakhaRuziev\Dance\Impl;
 class ElectroDanceDance extends DefaultDance
 {
 
+    protected $name = "ElectroDance";
     protected $head_move = 'Почти нет движения';
     protected $body_move = 'Вперед-назад';
     protected $hand_move = 'Круговые движения';

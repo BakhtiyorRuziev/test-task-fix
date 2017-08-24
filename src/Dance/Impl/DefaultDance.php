@@ -17,6 +17,13 @@ class DefaultDance implements Dance
     protected $body_move = '';
     protected $hand_move = '';
     protected $foot_move = '';
+    protected $name = '';
+
+    public function getName()
+    {
+        return $this->name;
+    }
+
 
     public function getHeadMove()
     {

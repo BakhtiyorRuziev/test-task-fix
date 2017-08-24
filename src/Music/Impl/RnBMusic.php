@@ -22,5 +22,14 @@ class RnBMusic extends DefaultMusic
     ];
 
 
+    public function __construct()
+    {
+        $this->dances = [
+            new HipHopDance(),
+            new RnBDance()
+        ];
+    }
+
+
 
 }

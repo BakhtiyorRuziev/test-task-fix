@@ -15,4 +15,6 @@ interface Dance
     public function getBodyMove();
     public function getHandMove();
     public function getFootMove();
+    public function getName();
+
 }
